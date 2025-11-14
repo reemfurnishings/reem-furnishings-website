@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Premium Reem Furnishings Color Palette */
+    --background: 40 25% 97%;
+    --foreground: 30 20% 15%;
+
+    --card: 40 30% 98%;
+    --card-foreground: 30 20% 15%;
+
+    --popover: 40 30% 98%;
+    --popover-foreground: 30 20% 15%;
+
+    /* Gold Gradient Primary */
+    --primary: 40 60% 65%;
+    --primary-foreground: 40 30% 98%;
+    
+    /* Deep Caramel Gold */
+    --gold-deep: 30 50% 45%;
+    --gold-light: 42 65% 70%;
+
+    /* Soft Desert Beige */
+    --secondary: 35 30% 85%;
+    --secondary-foreground: 30 20% 15%;
+
+    --muted: 40 20% 90%;
+    --muted-foreground: 30 15% 40%;
+
+    /* Champagne White */
+    --accent: 40 30% 98%;
+    --accent-foreground: 30 50% 45%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 40 30% 98%;
+
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 40 60% 65%;
+
+    --radius: 0.75rem;
+
+    /* Premium Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(40 60% 65%), hsl(30 50% 45%));
+    --gradient-subtle: linear-gradient(180deg, hsl(40 25% 97%), hsl(40 25% 95%));
+    --gradient-overlay: linear-gradient(90deg, hsl(40 25% 97% / 0.95), hsl(40 25% 97% / 0.8));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 24px -8px hsl(30 30% 45% / 0.12);
+    --shadow-medium: 0 8px 40px -12px hsl(30 30% 45% / 0.18);
+    --shadow-elegant: 0 12px 48px -16px hsl(30 30% 45% / 0.24);
+    
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-elegant: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    --sidebar-background: 40 25% 97%;
+    --sidebar-foreground: 30 20% 15%;
+    --sidebar-primary: 40 60% 65%;
+    --sidebar-primary-foreground: 40 30% 98%;
+    --sidebar-accent: 35 30% 85%;
+    --sidebar-accent-foreground: 30 20% 15%;
+    --sidebar-border: 40 20% 88%;
+    --sidebar-ring: 40 60% 65%;
+  }
+
+  .dark {
+    --background: 30 20% 12%;
+    --foreground: 40 30% 98%;
+
+    --card: 30 20% 15%;
+    --card-foreground: 40 30% 98%;
+
+    --popover: 30 20% 15%;
+    --popover-foreground: 40 30% 98%;
+
+    --primary: 40 60% 65%;
+    --primary-foreground: 30 20% 12%;
+
+    --gold-deep: 30 50% 45%;
+    --gold-light: 42 65% 70%;
+
+    --secondary: 30 18% 20%;
+    --secondary-foreground: 40 30% 98%;
+
+    --muted: 30 18% 20%;
+    --muted-foreground: 40 20% 70%;
+
+    --accent: 30 18% 20%;
+    --accent-foreground: 40 60% 65%;
+
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 40 30% 98%;
+
+    --border: 30 18% 22%;
+    --input: 30 18% 22%;
+    --ring: 40 60% 65%;
+    
+    --sidebar-background: 30 20% 12%;
+    --sidebar-foreground: 40 30% 98%;
+    --sidebar-primary: 40 60% 65%;
+    --sidebar-primary-foreground: 30 20% 12%;
+    --sidebar-accent: 30 18% 20%;
+    --sidebar-accent-foreground: 40 30% 98%;
+    --sidebar-border: 30 18% 22%;
+    --sidebar-ring: 40 60% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
