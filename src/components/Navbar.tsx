@@ -45,7 +45,7 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-8">
+            <div className="hidden md:flex items-center gap-6">
               <button
                 onClick={() => scrollToSection("services")}
                 className="text-foreground hover:text-primary transition-colors"
@@ -59,10 +59,22 @@ const Navbar = () => {
                 Projects
               </button>
               <button
-                onClick={() => scrollToSection("partners")}
+                onClick={() => scrollToSection("specification-packages")}
                 className="text-foreground hover:text-primary transition-colors"
               >
-                Partners
+                Specification
+              </button>
+              <button
+                onClick={() => scrollToSection("how-we-work")}
+                className="text-foreground hover:text-primary transition-colors"
+              >
+                How We Work
+              </button>
+              <button
+                onClick={() => scrollToSection("trade-specification-requests")}
+                className="text-foreground hover:text-primary transition-colors"
+              >
+                Trade Requests
               </button>
               <button
                 onClick={() => scrollToSection("faq")}
@@ -80,7 +92,7 @@ const Navbar = () => {
                 onClick={() => setDialogOpen(true)}
                 className="bg-gradient-gold hover:opacity-90 text-primary-foreground px-6 rounded-full shadow-soft"
               >
-                Get Quote
+                Request Trade Pricing
               </Button>
             </div>
 
@@ -115,10 +127,22 @@ const Navbar = () => {
                   Projects
                 </button>
                 <button
-                  onClick={() => scrollToSection("partners")}
+                  onClick={() => scrollToSection("specification-packages")}
                   className="text-left text-foreground hover:text-primary transition-colors py-2"
                 >
-                  Partners
+                  Specification
+                </button>
+                <button
+                  onClick={() => scrollToSection("how-we-work")}
+                  className="text-left text-foreground hover:text-primary transition-colors py-2"
+                >
+                  How We Work
+                </button>
+                <button
+                  onClick={() => scrollToSection("trade-specification-requests")}
+                  className="text-left text-foreground hover:text-primary transition-colors py-2"
+                >
+                  Trade Requests
                 </button>
                 <button
                   onClick={() => scrollToSection("faq")}
@@ -139,7 +163,7 @@ const Navbar = () => {
                   }}
                   className="bg-gradient-gold hover:opacity-90 text-primary-foreground w-full rounded-full"
                 >
-                  Get Quote
+                  Request Trade Pricing
                 </Button>
               </div>
             </div>
